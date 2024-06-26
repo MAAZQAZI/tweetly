@@ -49,3 +49,20 @@ dependencies {
 }
 
 
+
+publishing {
+    publications {
+
+        create<MavenPublication>("releaseAar") {
+            groupId = "com.example.image_library"
+            artifactId = "image-library"
+            version = "1.0"
+
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
+
+
+}

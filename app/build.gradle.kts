@@ -83,6 +83,7 @@ dependencies {
     implementation(libs.converter.gson)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.hilt.navigation.compose)
+   // implementation ("com.github.MAAZQAZI:tweetly:1.0")
 
     //implementation(project(":Image-Library"))
 }
